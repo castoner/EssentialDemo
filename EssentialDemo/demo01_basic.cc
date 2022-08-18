@@ -130,13 +130,13 @@ void sort_new_file() {
 		}
 		sortfile.close();
 	}
-
-
 }
+
+
 
 int main() {
 	//get_userinfo();
 	//get_nums();
-	sort_new_file();
+	//sort_new_file();
 	return 0;
 }
