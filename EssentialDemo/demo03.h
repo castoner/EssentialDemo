@@ -9,4 +9,7 @@
 #include <string>
 #include <fstream>
 
+
+#define VEC_FROM_ARRAY(v) v[0], v[1], v[2];
+
 using namespace std;

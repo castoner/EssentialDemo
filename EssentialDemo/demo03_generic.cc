@@ -118,6 +118,13 @@ typename list<T>::iterator insert_iterator(list<T> ilist, T ival) {
 	return it;
 }
 
+// 测试模板默认值
+template<typename state, typename input=state>
+void hello() {
+	input arr[3] = {7, 5, 3};
+	VEC_FROM_ARRAY(arr);
+}
+
 
 // 实例2-Function Object Adapter
 /*
@@ -257,8 +264,10 @@ int main() {
 	if (status) cout << "success writer into " << out << endl;*/
 
 	// 习题3.1
-	string in = "E:\\Code\\Cpp\\EssentialCpp\\EssentialDemo\\EssentialDemo\\files\\in.txt";
-	string out = "E:\\Code\\Cpp\\EssentialCpp\\EssentialDemo\\EssentialDemo\\files\\out.txt";
+	/*string in = "E:\\Code\\Cpp\\EssentialCpp\\EssentialDemo\\EssentialDemo\\files\\in.txt";
+	string out = "E:\\Code\\Cpp\\EssentialCpp\\EssentialDemo\\EssentialDemo\\files\\out.txt";*/
 	 
+
+	hello<int>();
 	return 0;
 }

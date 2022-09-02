@@ -6,10 +6,10 @@ cmake_minimum_required (VERSION 3.8)
 # 将源代码添加到此项目的可执行文件。
 add_executable (EssentialDemo "EssentialDemo.cpp" "EssentialDemo.h")
 add_executable (demo01 "demo01_basic.cc")
-<<<<<<<<< Temporary merge branch 1
-=========
+
+
 add_executable (demo02 "demo02_oop.cc" "demo02_oop.h")
->>>>>>>>> Temporary merge branch 2
+add_executable (demo03 "demo03_generic.cc" "demo03.h")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET EssentialDemo PROPERTY CXX_STANDARD 20)
